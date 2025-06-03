@@ -1,0 +1,80 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  theme: {
+    extend: {
+      colors: {
+        primary: {
+          50: '#f0f5ff',
+          100: '#e0eaff',
+          200: '#c7d7fe',
+          300: '#a5bbfc',
+          400: '#8295f8',
+          500: '#6370f3',
+          600: '#4f4ee6',
+          700: '#433dcd',
+          800: '#3733a5',
+          900: '#322f83',
+          950: '#201c54',
+        },
+        secondary: {
+          50: '#f5f7ff',
+          100: '#ebf0ff',
+          200: '#dbe3ff',
+          300: '#bfccff',
+          400: '#9aa7ff',
+          500: '#7a80ff',
+          600: '#685bff',
+          700: '#5d45ff',
+          800: '#4e38db',
+          900: '#3f31a9',
+          950: '#251a66',
+        },
+        accent: {
+          50: '#fbf2ff',
+          100: '#f7e4ff',
+          200: '#f0c9ff',
+          300: '#e79eff',
+          400: '#d968ff',
+          500: '#c941f2',
+          600: '#b324d8',
+          700: '#971ab1',
+          800: '#7d1891',
+          900: '#671876',
+          950: '#420c4c',
+        },
+        dark: {
+          50: '#f6f6f9',
+          100: '#ededf3',
+          200: '#d8d8e5',
+          300: '#b8b7ce',
+          400: '#9190b3',
+          500: '#736f98',
+          600: '#5f597e',
+          700: '#4c4866',
+          800: '#3e3a52',
+          900: '#282536',
+          950: '#161321',
+        },
+      },
+      fontFamily: {
+        sans: ['Inter', 'system-ui', 'sans-serif'],
+        display: ['Lexend', 'system-ui', 'sans-serif'],
+      },
+      animation: {
+        'float': 'float 6s ease-in-out infinite',
+        'spin-slow': 'spin 8s linear infinite',
+      },
+      keyframes: {
+        float: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-10px)' },
+        },
+      },
+      backgroundImage: {
+        'hero-pattern': 'url("data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%239C92AC\' fill-opacity=\'0.05\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")',
+      },
+    },
+  },
+  plugins: [],
+};
