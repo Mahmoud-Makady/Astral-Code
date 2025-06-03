@@ -1,6 +1,6 @@
 import React from 'react';
 import { Star } from 'lucide-react';
-
+import Logoo from '../../components/ui/logoo.png';
 interface LogoProps {
   size?: 'sm' | 'md' | 'lg';
   withText?: boolean;
@@ -32,7 +32,8 @@ const Logo: React.FC<LogoProps> = ({ size = 'md', withText = true }) => {
       
       {withText && (
         <span className={`font-display font-bold ${textSizes[size]} text-white`}>
-          Astral<span className="text-primary-400">-Code</span>
+          {/* Astral<span className="text-primary-400">-Code</span> */}
+          <img className='logoo' src={Logoo} alt="logo" />
         </span>
       )}
     </div>

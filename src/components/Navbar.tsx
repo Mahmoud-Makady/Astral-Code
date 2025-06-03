@@ -35,6 +35,7 @@ const Navbar: React.FC = () => {
         {/* Logo */}
         <NavLink to="/" className="z-10">
           <Logo size={isScrolled ? 'sm' : 'md'} />
+          {/* <img className='logoo' src={Logo} alt="logo" /> */}
         </NavLink>
 
         {/* Desktop Navigation */}

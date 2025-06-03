@@ -112,3 +112,8 @@
   opacity: 0.2;
   z-index: 0;
 }
+.logoo {
+  width: 200px;
+  height: auto;
+  margin: 0 auto;
+}
