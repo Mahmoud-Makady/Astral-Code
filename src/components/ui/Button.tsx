@@ -36,8 +36,8 @@ const Button: React.FC<ButtonProps> = ({
   
   const sizeClasses = {
     sm: 'py-2 px-4 text-sm',
-    md: 'py-3 px-6 text-base',
-    lg: 'py-4 px-8 text-lg',
+    md: 'py-2 px-6 text-base',
+    lg: 'py-2 px-8 text-lg',
   };
   
   const disabledClass = disabled ? 'opacity-60 cursor-not-allowed' : '';
