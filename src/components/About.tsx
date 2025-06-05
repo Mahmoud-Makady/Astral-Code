@@ -13,12 +13,12 @@ const About: React.FC<{ compact?: boolean }> = ({ compact = false }) => {
     },
     {
       icon: <Users size={24} className="text-primary-400" />,
-      value: '15+',
+      value: '10+',
       label: 'Team Members',
     },
     {
       icon: <Sparkles size={24} className="text-primary-400" />,
-      value: '50+',
+      value: '20+',
       label: 'Projects Completed',
     },
     {

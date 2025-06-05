@@ -21,7 +21,7 @@ export const COMPANY_INFO = {
   tagline: 'Building stellar digital experiences',
   description: 'We are a passionate team of developers and designers creating exceptional web solutions.',
   email: 'info@astral-code.com',
-  phone: '+1 (234) 567-8901',
-  address: 'Tech Hub, Innovation Street, Digital City',
+  phone: '(+2) 0155-067-1400',
+  address: 'Beni-Suef, Egypt',
   yearFounded: 2022,
 };

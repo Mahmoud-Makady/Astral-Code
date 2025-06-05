@@ -3,41 +3,46 @@ export interface Project {
   title: string;
   description: string;
   image: string;
-  category: 'web' | 'mobile' | 'ecommerce' | 'design';
+  category: 'web' | 'mobile' | 'e-commerce' | 'design' | 'e-learning';
   technologies: string[];
   link?: string;
   featured: boolean;
 }
+import TravelloImg from '../assets/Travello.png';
+import EgamesImg from '../assets/E-games.png';
+import SkillImg from '../assets/Skill-Stack.jpg';
+// import ScreenImg from '../assets/Screen-Spot.png';
+
 
 export const PROJECTS: Project[] = [
   {
     id: 'project1',
-    title: 'StellarShop E-commerce Platform',
-    description: 'A complete e-commerce solution with product management, payment integration, and customer analytics.',
-    image: 'https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    category: 'ecommerce',
-    technologies: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-    link: 'https://stellarshop.example.com',
+    title: 'Travello Travel Agency Platform',
+    description: 'A modern tourism website for discovering, booking, and managing travel packages and tours, with integrated payment and customer support features.',
+    image: TravelloImg,
+    category: 'web',
+    technologies: ['React', 'Firebase', 'ٌRedux', 'Formik&Yup'],
+    link: 'https://travello-psi.vercel.app/',
     featured: true
   },
   {
     id: 'project2',
-    title: 'CosmicTask Management App',
-    description: 'A responsive task management application with team collaboration features and real-time updates.',
-    image: 'https://images.pexels.com/photos/7014337/pexels-photo-7014337.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    title: 'E-Games',
+    description: 'An interactive web platform for discovering and playing a variety of online games, featuring a modern design and smooth user experience.',
+    image: EgamesImg,
     category: 'web',
-    technologies: ['Vue.js', 'Firebase', 'Tailwind CSS'],
-    link: 'https://cosmictask.example.com',
+    technologies: ['Html5', 'Css3', 'JavaScript', 'Bootstrap', 'Api'],
+    link: 'https://mahmoud-makady.github.io/EGames/',
     featured: true
   },
   {
     id: 'project3',
-    title: 'GalaxyFit Health Tracker',
-    description: 'A mobile application for tracking fitness activities, nutrition, and health metrics with personalized insights.',
-    image: 'https://images.pexels.com/photos/4386467/pexels-photo-4386467.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    category: 'mobile',
-    technologies: ['React Native', 'GraphQL', 'AWS'],
-    link: 'https://galaxyfit.example.com',
+    title: 'Skill-Stack',
+    description: 'SkillStack is a modern, responsive e-learning web application designed to provide users with a seamless online course experience',
+    image: SkillImg,
+    category: 'e-learning',
+    technologies: ['React', 'Css3', 'Firebase', 'ٌRedux'],
+    link: 'http://musical-youtiao-78d18d.netlify.app/',
     featured: true
   },
   {
@@ -65,7 +70,7 @@ export const PROJECTS: Project[] = [
     title: 'AstralMart Marketplace',
     description: 'A peer-to-peer marketplace platform with secure transactions, user ratings, and recommendation engine.',
     image: 'https://images.pexels.com/photos/7078883/pexels-photo-7078883.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    category: 'ecommerce',
+    category: 'e-commerce',
     technologies: ['React', 'Express', 'MongoDB', 'Redux'],
     link: 'https://astralmart.example.com',
     featured: true
